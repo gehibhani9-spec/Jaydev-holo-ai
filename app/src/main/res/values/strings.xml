@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Holo</string>
+    <string name="service_desc">Lets Holo read the screen and tap, type and scroll for you when you give it a command.</string>
+</resources>
