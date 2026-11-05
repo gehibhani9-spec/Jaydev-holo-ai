@@ -16,6 +16,18 @@ object Store {
         get() = sp.getString("key", "") ?: ""
         set(v) { sp.edit().putString("key", v.trim()).apply() }
 
+    var elevenKey: String
+        get() = sp.getString("ekey", "") ?: ""
+        set(v) { sp.edit().putString("ekey", v.trim()).apply() }
+
+    var elevenVoice: String
+        get() = sp.getString("evoice", "") ?: ""
+        set(v) { sp.edit().putString("evoice", v.trim()).apply() }
+
+    var handsFree: Boolean
+        get() = sp.getBoolean("hands", true)
+        set(v) { sp.edit().putBoolean("hands", v).apply() }
+
     var freeMode: Boolean
         get() = sp.getBoolean("free", false)
         set(v) { sp.edit().putBoolean("free", v).apply() }
